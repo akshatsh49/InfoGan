@@ -37,7 +37,7 @@ Vanilla gan L1 values are capped at (-15) for visibility.This shows that the inf
 ## Latent Space Interpolations
 <table align='center'>
 <tr align='center'>
-  <th> Hand-picked linearc space interpolation </th>
+  <th> Hand-picked linear space interpolation </th>
   <th> Interpolation GIF </th>
 </tr>
 <tr>
