@@ -4,7 +4,7 @@ Pytorch implementation of [InfoGAN: Interpretable Representation Learning byInfo
 
 ## Introduction
 Infogan uses an information theoretic approach for unsupervised disentangled representation learning.
-It does so by maximizing a mutual information objective between a subset of the generator input and the generated distribution. Generator input has 2 parts : z , the source of incompressible noise and c which we hope will learn different semantic features of the data.
+It does so by maximizing a mutual information objective between a subset of the generator input and the generated distribution. Generator input has 2 parts : z, the source of incompressible noise and c which we hope will learn different semantic features of the data.
 Mutual information is maximized between the generator output distribution : G(z,c) and the variable distribution (c). Using variational maximization we are able to obtain a lower bound over the mutual information. A net is required to model the posterior distribution p(c|x). This net shares most parameters from the discriminator to reduce computational costs. 
 
 ## Results 
@@ -52,4 +52,4 @@ Right to Left shows interpolation in the single categorical variable.
 <img src='https://github.com/akshatsh49/InfoGan/blob/master/Factor_interpolation/fi.png'>
 
 ## Additional Comments 
-The file [auxiliary.py](https://github.com/akshatsh49/InfoGan/blob/master/auxiliary.py) implements several helper functions for linear/spherical space interpolations , factor interpolations , and functions that make gifs of training over time and interpolations.
+The file [auxiliary.py](https://github.com/akshatsh49/InfoGan/blob/master/auxiliary.py) implements several helper functions for linear/spherical space interpolations, factor interpolations, and functions that make gifs of training over time and interpolations.
